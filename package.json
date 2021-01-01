@@ -1,12 +1,35 @@
 {
   "name": "generator-velo",
   "version": "0.1.0",
-  "description": "Vue SPA generator inspired by generator-yolo",
+  "description": "Vue SPA scaffolding tool inspired by generator-yolo folder structure. Optionally, Pug, vue-router and vuex can be included.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrisNg/generator-velo.git"
+  },
+  "author": "Iris Ng <irisngwl@gmail.com>",
+  "license": "MIT",
   "files": [
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "vue.js",
+    "vue",
+    "scaffold",
+    "generator",
+    "javascript",
+    "builder",
+    "velo",
+    "pug",
+    "vue-router",
+    "single-page-application",
+    "SPA",
+    "vuex",
+    "component",
+    "view",
+    "router",
+    "yeogurt",
+    "yolo"
   ],
   "dependencies": {
     "yeoman-generator": "^4.12.0"
