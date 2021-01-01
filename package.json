@@ -1,0 +1,14 @@
+{
+  "name": "generator-velo",
+  "version": "0.1.0",
+  "description": "Vue SPA generator inspired by generator-yolo",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^4.12.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "description": "An awesome Vue project",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "vue-cli-service build --deploy"
+  },
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "vue": "^2.6.12",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "node-sass": "^5.0.0",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.5",
+    "style-resources-loader": "^1.3.3",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "deployment": {
+    "assetsFolder": "../build/public",
+    "htmlFolderRelativeToAssets": "../views"
+  }
+}
