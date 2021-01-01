@@ -1,5 +1,3 @@
-# something
-
 ## Project setup
 ```
 npm install
@@ -10,9 +8,14 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production, outputs to /dist
 ```
 npm run build
+```
+
+### Compiles and minifies for deployment, outputs to path specified in package.json
+```
+npm run deploy
 ```
 
 ### Lints and fixes files
