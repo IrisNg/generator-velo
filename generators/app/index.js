@@ -25,18 +25,18 @@ module.exports = class extends (Generator) {
 
   async prompting() {
     this.answers = await this.prompt([
-      { type: 'input', name: 'projectName', message: 'Name of project', validate: this._validate_name },
-      { type: 'input', name: 'author', message: 'Name of author', default: '' },
+      { type: 'input', name: 'projectName', message: 'Name of Project', validate: this._validate_name },
+      { type: 'input', name: 'author', message: 'Name of Author', default: '' },
       {
         type: 'input',
         name: 'deploymentAssetsFolder',
-        message: 'Path of deployment assets folder relative to current prototype folder? (Can be changed in package.json later)',
+        message: 'Path of deployment Assets folder relative to current Prototype folder? (Can be changed in package.json later)',
         default: '../build/public',
       },
       {
         type: 'input',
         name: 'deploymentHtmlFolderRelativeToAssets',
-        message: 'Path of deployment html folder relative to deployment assets folder? (Can be changed in package.json later)',
+        message: 'Path of deployment HTML folder relative to deployment Assets folder? (Can be changed in package.json later)',
         default: '../views',
       },
       { type: 'confirm', name: 'pug', message: 'Include Pug', default: true },
@@ -52,6 +52,8 @@ module.exports = class extends (Generator) {
   _validate_name(input) {
     if (!input) {
       return 'Name of project is required';
+    } else if (input.indexOf(' ') > -1) {
+      return 'Space is not allowed in project name'
     }
     return true;
   }
