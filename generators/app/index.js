@@ -64,8 +64,14 @@ module.exports = class extends (Generator) {
     //Copy folder/file
     for (const obj of copyPaths) {
       //Copy files that start with . also
-      this.fs.copy(this.templatePath(obj.template), this.destinationPath(obj.destination), { globOptions: { dot: true } });
+      //Do not copy gitignore file as those require file renaming
+      this.fs.copy(this.templatePath(obj.template), this.destinationPath(obj.destination), { globOptions: { dot: true, ignore: ['**/gitignore'] } });
     }
+
+    //Manually copy and rename gitignore file
+    //gitignore files cannot be named as '.gitignore' inside generator because when we npm publish, it will transform .gitignore to .npmignore
+    //When user generates, it will output as .npmignore instead of .gitignore
+    this.fs.copy(this.templatePath('root/gitignore'), this.destinationPath('.gitignore'))
 
     //Copy and template 'main.js'
     this.fs.copyTpl(this.templatePath('src/main.js'), this.destinationPath('src/main.js'), this.answers);
