@@ -1,6 +1,6 @@
 {
   "name": "generator-velo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue SPA scaffolding tool inspired by generator-yolo folder structure. Optionally, Pug, vue-router and vuex can be included.",
   "main": "index.js",
   "scripts": {
