@@ -5,7 +5,6 @@ Scaffolding tool for Vue single page application, as inspired by generator-yolo'
 Generator-Velo has been built on top of project setup from Vue-CLI.
 
 <br/>
-<br/>
 
 # Features
 
@@ -31,7 +30,7 @@ Generator-Velo has been built on top of project setup from Vue-CLI.
  - **Vuex** (State management pattern + library)
 
    
-<br/>
+
 <br/>
 
 # Setup
@@ -120,7 +119,6 @@ Generator-Velo has been built on top of project setup from Vue-CLI.
     **Congratulations!** You have successfully created your first project folder using Generator-Velo!
     
 <br/>
-<br/>
     
     
 
@@ -146,12 +144,12 @@ A project scaffolded by Generator-Velo will have the following folder structure:
         |__ images                    # Images
             |__ sample.jpg
         |__ styles
-          	|__ helpers               # These 3 SCSS files are auto-imported into
-          	    |__ _helpers.scss     # every .vue Single File Component
-          	    |__ _mixins.scss      # More SCSS helper files can be added via
-          	    |__ _variables.scss   # vue.config.js 'css'->'additionalData' 
-          	    
-          	|__ _icons.scss           # Icomoon icon classes imported into App.vue
+            |__ helpers               # These 3 SCSS files are auto-imported into
+                |__ _helpers.scss     # every .vue Single File Component
+                |__ _mixins.scss      # More SCSS helper files can be added via
+                |__ _variables.scss   # vue.config.js 'css'->'additionalData' 
+
+            |__ _icons.scss           # Icomoon icon classes imported into App.vue
                                       # To be maintained by copying icon classes
                                       # from icomoon/style.css when Icomoon change
           								
@@ -184,14 +182,13 @@ A project scaffolded by Generator-Velo will have the following folder structure:
 ```
 
 
-<br />
+
 <br />
 
 # Commands
 
 The following commands can be used in terminal after navigating to the project root folder:
 
-<br />
 
 - **Generate a new project**
 
@@ -269,14 +266,13 @@ These script commands are available **after project is created**:
   npm run deploy 
   ```
 
-<br/>
+
 <br/>
 
 # Assets Usage
 
 Here are examples on how you can use various asset files in /src/assets/... folders
 
-<br />
 
 
 - **Mock API request** (using src/assets/apis/file.json)
@@ -304,7 +300,7 @@ Here are examples on how you can use various asset files in /src/assets/... fold
   
       res.redirect(req.originalUrl);
   
-     });  
+     });
   
     }
   
@@ -410,7 +406,6 @@ Here are examples on how you can use various asset files in /src/assets/... fold
   
 
 <br />
-<br />
 
 # FAQ
 
@@ -418,28 +413,24 @@ Here are examples on how you can use various asset files in /src/assets/... fold
 
     Absolutely yes. You will have to uninstall Axios as a dependency and install another HTTP client of your choice in the project.
 
-<br />
     
 
  2. *Do I need to install promise polyfill for Axios to work in older browsers?*
 
     There is no need for you to do so manually as it has already been included by default in babel configuration.  
 
-<br />
     
 
  3. *Where can I specify the SCSS helper files that will be auto-imported into every .vue single file component?*
 
     See section Assets Usage - SCSS Reusable Helpers.
 
-<br />
     
 
  4. *Where can I specify the output path for production build?*
 
     See section Commands - 'npm run build' and 'npm run deploy'.
 
-<br />
     
 
  5. *Where can I change browser compatibility / the list of browsers supported by Babel and CSS Autoprefixer?*
@@ -447,13 +438,12 @@ Here are examples on how you can use various asset files in /src/assets/... fold
     You can do so in file .browserslistrc (in project root folder, on the same folder level as package.json) according to the format listed here https://github.com/browserslist/browserslist
 
     
-<br />
 
   6. *I made a POST request in javascript but i see two requests were made in network tab of console - one POST and one GET request, what is happening?*
 
      See section Assets Usage - Mock API Request.
 
-<br />
+
 <br />
      
 
