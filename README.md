@@ -125,59 +125,58 @@ Generator-Velo has been built on top of project setup from Vue-CLI.
 # Folder Structure
 A project scaffolded by Generator-Velo will have the following folder structure:
 
-<br />
 
 ```
-|__ node_modules                      # NPM dependencies 
+|__ node_modules                        # NPM dependencies 
 |__ public
-    |__ index.html                    # Only html for single page app
+    |__ index.html                      # Only html for single page app
     |__ favicon.ico
 |__ src
     |__ assets
-        |__ apis                      # Dummy JSON files for mock API request
+        |__ apis                        # Dummy JSON files for mock API request
             |__ sample-response.json
-        |__ fonts                     # Custom font files
+        |__ fonts                       # Custom font files
             |__ sample.ttf
-        |__ icomoon                   # Extract downloaded icomoon.zip here
+        |__ icomoon                     # Extract downloaded icomoon.zip here
             |__ fonts
             |__ ...
-        |__ images                    # Images
+        |__ images                      # Images
             |__ sample.jpg
         |__ styles
-            |__ helpers               # These 3 SCSS files are auto-imported into
-                |__ _helpers.scss     # every .vue Single File Component
-                |__ _mixins.scss      # More SCSS helper files can be added via
-                |__ _variables.scss   # vue.config.js 'css'->'additionalData' 
+            |__ helpers                 # These 3 SCSS files are auto-imported into
+                |__ _helpers.scss       # every .vue Single File Component
+                |__ _mixins.scss        # More SCSS helper files can be added via
+                |__ _variables.scss     # vue.config.js 'css'->'additionalData' 
 
-            |__ _icons.scss           # Icomoon icon classes imported into App.vue
-                                      # To be maintained by copying icon classes
-                                      # from icomoon/style.css when Icomoon change
+            |__ _icons.scss             # Icomoon icon classes imported into App.vue
+                                        # To be maintained by copying icon classes
+                                        # from icomoon/style.css when Icomoon change
           								
-    |__ components                    # Vue Single File Components (SFC)
+    |__ components                      # Vue Single File Components (SFC)
         |__ Example.vue
-    |__ router                        # Optional, with Vue-router
-        |__ index.js                  # Contain routes for single page app
+    |__ router                          # Optional, with Vue-router
+        |__ index.js                    # Contain routes for single page app
     	
-    |__ store                         # Optional, with Vuex
-        |__ index.js                  # Contain Vuex state, mutations, actions
+    |__ store                           # Optional, with Vuex
+        |__ index.js                    # Contain Vuex state, mutations, actions
     	
-    |__ views                         # Optional, with Vue-router 
-        |__ Homepage.vue              # Page components used in router/index.js
+    |__ views                           # Optional, with Vue-router 
+        |__ Homepage.vue                # Page components used in router/index.js
     	
-    |__ main.js                       # Main JS file instantiating Vue instance
-    |__ App.vue                       # Root Vue component, global styles go here
+    |__ main.js                         # Main JS file instantiating Vue instance
+    |__ App.vue                         # Root Vue component, global styles go here
     
-|__ .browserslistrc    # Supported browsers config (affect babel & css autoprefix)
+|__ .browserslistrc        # Supported browsers config (affect babel & css autoprefix)
 |__ .editorconfig
-|__ eslintrc.js        # Eslint config
-|__ .gitignore         # Files/Folders to be ignored by GIT
-|__ .yo-rc.json        # Data for generator's reference
-|__ babel.config.js    # Babel config
-|__ vue.config.js      # Extended Webpack config using vue-cli webpack config as base
+|__ eslintrc.js            # Eslint config
+|__ .gitignore             # Files/Folders to be ignored by GIT
+|__ .yo-rc.json            # Data for generator's reference
+|__ babel.config.js        # Babel config
+|__ vue.config.js          # Extended Webpack config using vue-cli webpack config as base
 |__ jsconfig.json
 |__ package-lock.json
-|__ package.json       # Project config to manage dependencies, 
-                       # deployment build path, etc
+|__ package.json           # Project config to manage dependencies, 
+                           # deployment build path, etc
 |__ README.md
 ```
 
