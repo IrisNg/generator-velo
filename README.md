@@ -235,8 +235,6 @@ The following commands can be used in terminal after navigating to the project r
 
 These script commands are available **after project is created**: 
 
-<br/>
-
 
 
 - **Run development server** with hot reload
